@@ -76,9 +76,8 @@ let winner;
 let player1Score = 0;
 let player2Score = 0;
 
-///Socket
-// const socket = io.connect( "https://rock-paper-scissor-six-gamma.vercel.app/", { secure: true, transports: [ "flashsocket","polling","websocket" ] } );
-const socket = io.connect( "http://localhost:3000/", { secure: true, transports: [ "flashsocket","polling","websocket" ] } );
+const socket = io.connect( "https://telegram-miniapp-rps-bot.vercel.app/", { secure: true, transports: [ "flashsocket","polling","websocket" ] } );
+// const socket = io.connect( "http://localhost:3000/", { secure: true, transports: [ "flashsocket","polling","websocket" ] } );
 
 const createRoom = () => {
   player1 = true;
